@@ -12,7 +12,11 @@ namespace GeradorDeArquivoCnab240.Console
     class Program
     {
         private static bool ArquivoComFornecedorUnico => true;
-        private static string Cnpj { get; set; }
+        private static string CnpjCliente => "12075667000132";
+        private static string IdentificadorClienteArquivo => "DAY12075667000132";
+        private static string NomeFornecedor => "TESTE DE FORNECEDOR";
+        private static DateTime DataVencimento => DateTime.Now.AddDays(3);
+        private static string CnpjFornecedor { get; set; }
 
         static void Main(string[] args)
         {
@@ -53,7 +57,7 @@ namespace GeradorDeArquivoCnab240.Console
                 for (var i = 0; i < 5; i++)
                 {
                     using (var sw = File.CreateText(Path.Combine(pathDestino,
-                        GeradorHelper.ObterNomeArquivo(pathDestino, "16701716000156"))))
+                        GeradorHelper.ObterNomeArquivo(pathDestino, IdentificadorClienteArquivo))))
                     {
                         sw.Write(arquivoSemLinhasVazias);
                     }
@@ -82,8 +86,8 @@ namespace GeradorDeArquivoCnab240.Console
 
         private static string SetarDadosHeader(string linha)
         {
-            var dadosHeaderArquivo = new DadosHeaderArquivo("16701716000156");
-            var dadosHeaderLote = new DadosHeaderLote("16701716000156");
+            var dadosHeaderArquivo = new DadosHeaderArquivo(CnpjCliente);
+            var dadosHeaderLote = new DadosHeaderLote(CnpjCliente);
 
             if (!dadosHeaderArquivo.IsValid)
                 throw new Exception("Header arquivo inválido.");
@@ -98,18 +102,18 @@ namespace GeradorDeArquivoCnab240.Console
 
         private static string SetarDadosSegmentoA(string linha, int totalLinhas)
         {
-            if (ArquivoComFornecedorUnico && string.IsNullOrEmpty(Cnpj))
+            if (ArquivoComFornecedorUnico && string.IsNullOrEmpty(CnpjFornecedor))
             {
-                Cnpj = GerardorDeCnpjHelper.GeraCnpj().CnpjLimpo();
+                CnpjFornecedor = GerardorDeCnpjHelper.GeraCnpj().CnpjLimpo();
             }
             else if (!ArquivoComFornecedorUnico)
             {
-                Cnpj = GerardorDeCnpjHelper.GeraCnpj().CnpjLimpo();
+                CnpjFornecedor = GerardorDeCnpjHelper.GeraCnpj().CnpjLimpo();
             }
 
-            var dadosSegmentoA = new DetalheSegmentoA("TESTE DE FORNECEDOR",
-                NotaFiscalHelper.GerarNumeroNotaFiscalAleatorio(), 1500, Cnpj.CnpjLimpo(),
-                DateTime.Now.AddDays(1), totalLinhas);
+            var dadosSegmentoA = new DetalheSegmentoA(NomeFornecedor,
+                NotaFiscalHelper.GerarNumeroNotaFiscalAleatorio(), 1500, CnpjFornecedor.CnpjLimpo(),
+                DataVencimento, totalLinhas);
 
             if (!dadosSegmentoA.IsValid)
                 throw new Exception("Segmento A inválido.");

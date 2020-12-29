@@ -20,3 +20,5 @@ C:\Git\JefersonDeSouza\CriadorDeArquivoCnab240\GeradorDeArquivoCnab240.Console\G
 C:\Git\JefersonDeSouza\CriadorDeArquivoCnab240\GeradorDeArquivoCnab240.Console\GeradorDeArquivoCnab240.Console\obj\Debug\netcoreapp2.2\GeradorDeArquivoCnab240.Console.dll
 C:\Git\JefersonDeSouza\CriadorDeArquivoCnab240\GeradorDeArquivoCnab240.Console\GeradorDeArquivoCnab240.Console\obj\Debug\netcoreapp2.2\GeradorDeArquivoCnab240.Console.pdb
 C:\Git\JefersonDeSouza\CriadorDeArquivoCnab240\GeradorDeArquivoCnab240.Console\GeradorDeArquivoCnab240.Console\bin\Debug\netcoreapp2.2\Arquivos\ArquivoReferencia\PG000##CODIGOCLIENTE##_##DATAHORA##-##INDICE##.REM
+C:\Git\JefersonDeSouza\CriadorDeArquivoCnab240\GeradorDeArquivoCnab240.Console\GeradorDeArquivoCnab240.Console\obj\Debug\netcoreapp2.2\GeradorDeArquivoCnab240.Console.csproj.CoreCompileInputs.cache
+C:\Git\JefersonDeSouza\CriadorDeArquivoCnab240\GeradorDeArquivoCnab240.Console\GeradorDeArquivoCnab240.Console\obj\Debug\netcoreapp2.2\GeradorDeArquivoCnab240.Console.genruntimeconfig.cache

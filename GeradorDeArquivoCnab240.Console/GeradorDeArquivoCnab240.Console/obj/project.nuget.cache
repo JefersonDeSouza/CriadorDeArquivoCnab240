@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sLN5oZx6ViQ5JfY+VrP1qnTSn5kMrYGVNSBhC4t/rM0fozbvm/dyQanxme0ilnW10QmIRa2cRrNMH8FRTgeSuQ==",
+  "dgSpecHash": "HdYk/6WY64+3ho9VOki1SF/vdrjYyeSXcVSX8hHPp2vZNyXbVnMMecCchtcsWudFq9Jgj0cPBsYkv+L4FMWmEg==",
   "success": true,
   "projectFilePath": "C:\\Git\\JefersonDeSouza\\CriadorDeArquivoCnab240\\GeradorDeArquivoCnab240.Console\\GeradorDeArquivoCnab240.Console\\GeradorDeArquivoCnab240.Console.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
-    "C:\\Users\\sj0077\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
