@@ -22,22 +22,8 @@
     <list default="true" id="49d13df3-de92-46ec-9a93-ee9d3d1ac0ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeradorDeArquivoCnab240.Console/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeradorDeArquivoCnab240.Console/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GeradorDeArquivoCnab240.Console/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GeradorDeArquivoCnab240.Console/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/Entidade/DetalheSegmentoA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/Entidade/DetalheSegmentoA.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/bin/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/bin/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/bin/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/bin/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/bin/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/bin/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/Debug/netcoreapp2.2/GeradorDeArquivoCnab240.Console.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/GeradorDeArquivoCnab240.Console.csproj.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/GeradorDeArquivoCnab240.Console.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/GeradorDeArquivoCnab240.Console.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/GeradorDeArquivoCnab240.Console.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/GeradorDeArquivoCnab240.Console.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/GeradorDeArquivoCnab240.Console.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/GeradorDeArquivoCnab240.Console.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +138,7 @@
       <workItem from="1601329036190" duration="553000" />
       <workItem from="1606924645996" duration="2678000" />
       <workItem from="1606951653395" duration="625000" />
-      <workItem from="1609257274747" duration="304000" />
+      <workItem from="1609257274747" duration="2314000" />
     </task>
     <servers />
   </component>
@@ -177,22 +163,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom" timestamp="1606936471554">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1609257674520">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606936471554" />
-    <state width="1323" height="258" key="GridCell.Tab.0.center" timestamp="1606936471554">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1609257674520" />
+    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1609257674520">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606936471554" />
-    <state width="1323" height="258" key="GridCell.Tab.0.left" timestamp="1606936471554">
+    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1609257674520" />
+    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1609257674519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606936471554" />
-    <state width="1323" height="258" key="GridCell.Tab.0.right" timestamp="1606936471554">
+    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1609257674519" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1609257674520">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="258" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606936471554" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1609257674520" />
     <state width="1323" height="249" key="GridCell.Tab.1.bottom" timestamp="1601329590378">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -265,6 +251,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GeradorDeArquivoCnab240.Console/Entidade/DetalheSegmentoA.cs</url>
+          <line>53</line>
+          <properties documentPath="C:\Git\JefersonDeSouza\CriadorDeArquivoCnab240\GeradorDeArquivoCnab240.Console\GeradorDeArquivoCnab240.Console\Entidade\DetalheSegmentoA.cs" initialLine="51">
+            <startOffsets>
+              <option value="1926" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1989" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

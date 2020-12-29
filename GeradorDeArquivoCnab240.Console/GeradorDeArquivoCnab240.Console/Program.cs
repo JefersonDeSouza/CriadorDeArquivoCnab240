@@ -15,7 +15,8 @@ namespace GeradorDeArquivoCnab240.Console
         private static string CnpjCliente => "12075667000132";
         private static string IdentificadorClienteArquivo => "DAY12075667000132";
         private static string NomeFornecedor => "TESTE DE FORNECEDOR";
-        private static DateTime DataVencimento => DateTime.Now.AddDays(3);
+        private static DateTime DataVencimento => DateTime.Now.AddDays(7);
+        private static decimal ValorTaxa => 112M;
         private static string CnpjFornecedor { get; set; }
 
         static void Main(string[] args)
@@ -113,7 +114,7 @@ namespace GeradorDeArquivoCnab240.Console
 
             var dadosSegmentoA = new DetalheSegmentoA(NomeFornecedor,
                 NotaFiscalHelper.GerarNumeroNotaFiscalAleatorio(), 1500, CnpjFornecedor.CnpjLimpo(),
-                DataVencimento, totalLinhas);
+                DataVencimento, totalLinhas, ValorTaxa);
 
             if (!dadosSegmentoA.IsValid)
                 throw new Exception("Segmento A inválido.");
@@ -121,6 +122,7 @@ namespace GeradorDeArquivoCnab240.Console
             linha = linha.Replace("##NOME_FORNECEDOR##", dadosSegmentoA.NomeFornecedor);
             linha = linha.Replace("##NUM_NOTA##", dadosSegmentoA.NumeroNota);
             linha = linha.Replace("##DATA_VENCIMENTO##",dadosSegmentoA.DataVencimento.ToString(CultureInfo.InvariantCulture));
+            linha = linha.Replace("##VALOR_TAXA##", dadosSegmentoA.ValorTaxa.ToString(CultureInfo.InvariantCulture));
             linha = linha.Replace("##VALOR_PGTO##", dadosSegmentoA.ValorPgto.ToString(CultureInfo.InvariantCulture));
             linha = linha.Replace("##CNPJ_FORNECEDOR##", dadosSegmentoA.CnpjFornecedor);
             linha = linha.Replace("##TOTAL_PGTO##",dadosSegmentoA.ValorTotalPgto.ToString(CultureInfo.InvariantCulture));

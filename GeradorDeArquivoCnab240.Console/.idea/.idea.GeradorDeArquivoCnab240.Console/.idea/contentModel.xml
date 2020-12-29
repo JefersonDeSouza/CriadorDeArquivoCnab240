@@ -5,13 +5,9 @@
       <e p="GeradorDeArquivoCnab240.Console" t="IncludeRecursive">
         <e p="Arquivos" t="Include">
           <e p="ArquivoReferencia" t="Include">
+            <e p="PG000##CODIGOCLIENTE##_##DATAHORA##-##INDICE## - Copia.REM" t="Include" />
             <e p="PG000##CODIGOCLIENTE##_##DATAHORA##-##INDICE##.REM" t="Include" />
           </e>
-          <e p="DAY34230979000106_02122020_001.REM" t="Include" />
-          <e p="DAY34230979000106_02122020_002.REM" t="Include" />
-          <e p="DAY34230979000106_02122020_003.REM" t="Include" />
-          <e p="DAY34230979000106_02122020_004.REM" t="Include" />
-          <e p="DAY34230979000106_02122020_005.REM" t="Include" />
           <e p="Importados" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
