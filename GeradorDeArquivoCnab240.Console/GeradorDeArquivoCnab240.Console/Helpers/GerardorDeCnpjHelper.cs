@@ -108,12 +108,4 @@ namespace GeradorDeArquivoCnab240.Console.Helpers
             return numeroGerado;
         }
     }
-    
-    public static class StringExtensions
-    {
-       public static string CnpjLimpo(this string gerador)
-       {
-          return gerador?.Replace(@".", "").Replace("-", "").Replace(@"/", "").Trim();
-       }
-    }
 }

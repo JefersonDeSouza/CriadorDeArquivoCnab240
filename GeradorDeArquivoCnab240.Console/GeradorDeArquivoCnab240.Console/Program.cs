@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using GeradorDeArquivoCnab240.Console.Entidade;
+using GeradorDeArquivoCnab240.Console.Extensions;
 using GeradorDeArquivoCnab240.Console.Helpers;
 
 namespace GeradorDeArquivoCnab240.Console
@@ -12,12 +13,13 @@ namespace GeradorDeArquivoCnab240.Console
     class Program
     {
         private static bool ArquivoComFornecedorUnico => true;
-        private static string CnpjCliente => "12075667000132";
-        private static string IdentificadorClienteArquivo => "DAY12075667000132";
-        private static string NomeFornecedor => "TESTE DE FORNECEDOR";
-        private static DateTime DataVencimento => DateTime.Now.AddDays(7);
-        private static decimal ValorTaxa => 112M;
+        private static string CnpjCliente => "60765823000130";
+        private static string IdentificadorClienteArquivo => "PG0008615219";
+        private static DateTime DataVencimento => DateTime.Now.AddDays(12);
+        private static decimal ValorTaxa => 0.60M;
         private static string CnpjFornecedor { get; set; }
+        private static int QtdeArquivo => 1;
+        private static bool IsPf => true;
 
         static void Main(string[] args)
         {
@@ -55,7 +57,7 @@ namespace GeradorDeArquivoCnab240.Console
                     RegexOptions.Multiline);
                 var pathDestino = Environment.CurrentDirectory.Split("bin").First() + "Arquivos";
 
-                for (var i = 0; i < 5; i++)
+                for (var i = 0; i < QtdeArquivo; i++)
                 {
                     using (var sw = File.CreateText(Path.Combine(pathDestino,
                         GeradorHelper.ObterNomeArquivo(pathDestino, IdentificadorClienteArquivo))))
@@ -105,15 +107,19 @@ namespace GeradorDeArquivoCnab240.Console
         {
             if (ArquivoComFornecedorUnico && string.IsNullOrEmpty(CnpjFornecedor))
             {
-                CnpjFornecedor = GerardorDeCnpjHelper.GeraCnpj().CnpjLimpo();
+                CnpjFornecedor = IsPf 
+                    ? GeradorDeCpfHelper.GerarCpf().DocumentoLimpo()
+                    : GerardorDeCnpjHelper.GeraCnpj().DocumentoLimpo();
             }
             else if (!ArquivoComFornecedorUnico)
             {
-                CnpjFornecedor = GerardorDeCnpjHelper.GeraCnpj().CnpjLimpo();
+                CnpjFornecedor = IsPf
+                    ? GeradorDeCpfHelper.GerarCpf().DocumentoLimpo()
+                    : GerardorDeCnpjHelper.GeraCnpj().DocumentoLimpo();
             }
 
-            var dadosSegmentoA = new DetalheSegmentoA(NomeFornecedor,
-                NotaFiscalHelper.GerarNumeroNotaFiscalAleatorio(), 1500, CnpjFornecedor.CnpjLimpo(),
+            var dadosSegmentoA = new DetalheSegmentoA(GeradorDeNomeHelper.GerarNomeAleatorio(),
+                NotaFiscalHelper.GerarNumeroNotaFiscalAleatorio(), 1500, CnpjFornecedor.DocumentoLimpo(),
                 DataVencimento, totalLinhas, ValorTaxa);
 
             if (!dadosSegmentoA.IsValid)

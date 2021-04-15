@@ -12,11 +12,12 @@ namespace GeradorDeArquivoCnab240.Console.Entidade
         public string ValorTotalPgto { get; set; }
         public string CnpjFornecedor { get; set; }
         public string DataVencimento { get; set; }
-        
+
         public string ValorTaxa { get; set; }
 
         private const int LengthNomeFornecedor = 30;
         private const int LengthNumeroNota = 20;
+        private const int LengthDocumentoFornecedor = 14;
         private const int LengthValorPgto = 15;
         private const int LengthTotalValorPgto = 18;
         private const int LengthTotalValorTaxa = 15;
@@ -25,7 +26,7 @@ namespace GeradorDeArquivoCnab240.Console.Entidade
         private const int TotalTrailerArquivo = 2;
         private const decimal TotalSegmentoArquivo = 2;
 
-        public bool IsValid    
+        public bool IsValid
         {
             get => true;
             private set { }
@@ -37,7 +38,7 @@ namespace GeradorDeArquivoCnab240.Console.Entidade
             NomeFornecedor = nomeFornecedor;
             NumeroNota = numeroNota;
             ValorPgto = valorPgto.ToString();
-            CnpjFornecedor = cnpjFornecedor;
+            CnpjFornecedor = ObterDocumentoFornecedor(cnpjFornecedor);
             DataVencimento = dataVencimento.Date.ToString("ddMMyyyy");
             ValorTotalPgto = ObterValorTotalArquivo(totalLinhaArquivo, valorPgto);
             ValorTaxa = ObterValorTaxa(valorTaxa);
@@ -45,15 +46,22 @@ namespace GeradorDeArquivoCnab240.Console.Entidade
             ComplementarNumNota();
             ComplementarValorPgto();
             ComplementarValorTotalPgto();
-            
+
             Validar();
+        }
+
+        private string ObterDocumentoFornecedor(string documento)
+        {
+            var padding = System.Math.Abs(documento.Length - LengthDocumentoFornecedor);
+            return string.Empty.PadRight(padding, '0') + documento;
         }
 
         private string ObterValorTaxa(decimal valorTaxa)
         {
             var vlTotal = valorTaxa.ToString(CultureInfo.InvariantCulture);
             var padding = System.Math.Abs(vlTotal.Length - LengthTotalValorTaxa);
-            return string.Empty.PadRight(padding, '0') + valorTaxa;
+            var taxaComPadding = string.Empty.PadRight(padding, '0') + valorTaxa;
+            return taxaComPadding.Replace(",", "0");
         }
 
         private string ObterValorTotalArquivo(int totalLinhaArquivo, decimal valorPgto)
@@ -68,7 +76,7 @@ namespace GeradorDeArquivoCnab240.Console.Entidade
             if (string.IsNullOrEmpty(NomeFornecedor)) return;
 
             var padding = System.Math.Abs(NomeFornecedor.Length - LengthNomeFornecedor);
-//            NomeFornecedor = NomeFornecedor.PadRight(padding, ' ');
+            //            NomeFornecedor = NomeFornecedor.PadRight(padding, ' ');
             NomeFornecedor = string.Empty.PadLeft(padding, ' ') + NomeFornecedor;
         }
 
